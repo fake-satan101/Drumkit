@@ -6,11 +6,7 @@ var j=document.querySelector(".j");
 var k=document.querySelector(".k");
 var l=document.querySelector(".l");
 
-w.addEventListener("click",function(){
-  w.style.color="blue";
-  let a= new Audio("./sounds/crash.mp3");
-  a.play()
-});
+
 function sound(button, audio){
 
   button.addEventListener("mouseover",function(){
