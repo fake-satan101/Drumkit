@@ -17,7 +17,7 @@ function sound(button, audio){
       button.style.color="#DA0463";
     });
   button.addEventListener("click",function(){
-    let a= new Audio("."+audio+"");
+    let a= new Audio(audio);
     a.play()
   });
 }
