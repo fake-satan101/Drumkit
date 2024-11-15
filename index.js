@@ -30,10 +30,10 @@ function mo(button){
   }
 
 
-sound(w, "/sounds/tom-1.mp3")
-sound(a, "/sounds/tom-2.mp3")
-sound(d, "/sounds/tom-3.mp3")
-sound(s, "/sounds/tom-4.mp3")
-sound(j, "/sounds/crash.mp3")
-sound(k, "/sounds/snare.mp3")
-sound(l, "/sounds/kick-bass.mp3")
+sound(w, "tom-1.mp3")
+sound(a, "tom-2.mp3")
+sound(d, "tom-3.mp3")
+sound(s, "tom-4.mp3")
+sound(j, "crash.mp3")
+sound(k, "snare.mp3")
+sound(l, "kick-bass.mp3")
