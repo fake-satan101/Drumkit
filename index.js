@@ -18,7 +18,7 @@ function sound(button, audio){
     });
   button.addEventListener("click",function(){
     let a= new Audio(audio);
-    a.play()
+    a.play();
   });
 }
 function mo(button){
