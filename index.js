@@ -1,24 +1,20 @@
-var w=document.querySelector(".w");
-var a=document.querySelector(".a");
-var s=document.querySelector(".s");
-var d=document.querySelector(".d");
-var j=document.querySelector(".j");
-var k=document.querySelector(".k");
-var l=document.querySelector(".l");
 
 
-function sound(button, audio){
 
-  button.addEventListener("mouseover",function(){
-    button.style.color="green";
-    button.style.fontweight="bold";
+function sound(button, audio, image){
+  let btn=document.querySelector("."+button);
+  btn.addEventListener("mouseover",function(){
+    btn.style.color="green";
+    btn.style.fontweight="bold";
+    document.querySelector("img").setAttribute("src",image);
   });
-  button.addEventListener("mouseout",function(){
-      button.style.color="#DA0463";
+  btn.addEventListener("mouseout",function(){
+      btn.style.color="#DA0463";
     });
-  button.addEventListener("click",function(){
+  btn.addEventListener("click",function(){
     let a= new Audio(audio);
     a.play();
+    
   });
 }
 function mo(button){
@@ -26,10 +22,10 @@ function mo(button){
   }
 
 
-sound(w, "tom-1.mp3")
-sound(a, "tom-2.mp3")
-sound(d, "tom-3.mp3")
-sound(s, "tom-4.mp3")
-sound(j, "crash.mp3")
-sound(k, "snare.mp3")
-sound(l, "kick-bass.mp3")
+sound("w", "tom-1.mp3","tom1.png")
+sound("a", "tom-2.mp3","tom2.png")
+sound("d", "tom-3.mp3","tom3.png")
+sound("s", "tom-4.mp3","tom4.png")
+sound("j", "crash.mp3","crash.png")
+sound("k", "snare.mp3","snare.png")
+sound("l", "kick-bass.mp3","kick.png")
