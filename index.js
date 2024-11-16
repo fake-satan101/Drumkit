@@ -10,7 +10,7 @@ function sound(button, audio, image){
   });
   btn.addEventListener("mouseout",function(){
     btn.style.color="#DA0463";
-    document.querySelector("img").removeAttribute("src");
+    document.querySelector("img").setAttribute("src","");
   });
   btn.addEventListener("click",function(){
     let a= new Audio(audio);
@@ -18,9 +18,7 @@ function sound(button, audio, image){
     
   });
 }
-function mo(button){
 
-  }
 
 
 sound("w", "tom-1.mp3","tom1.png")
