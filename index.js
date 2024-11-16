@@ -6,7 +6,7 @@ function sound(button, audio, image){
   btn.addEventListener("mouseover",function(){
     btn.style.color="green";
     btn.style.fontweight="bold";
-    document.querySelector("img").setAttribute("src",image);
+    document.querySelector("img").setAttribute("src","./images/"+image);
   });
   btn.addEventListener("mouseout",function(){
     btn.style.color="#DA0463";
