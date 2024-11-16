@@ -10,6 +10,7 @@ function sound(button, audio, image){
   });
   btn.addEventListener("mouseout",function(){
       btn.style.color="#DA0463";
+      document.querySelector("img").removeAttribute("src");
     });
   btn.addEventListener("click",function(){
     let a= new Audio(audio);
