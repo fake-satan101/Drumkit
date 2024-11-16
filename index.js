@@ -6,7 +6,7 @@ function sound(button, audio, image){
   btn.addEventListener("mouseover",function(){
     btn.style.color="green";
     btn.style.fontweight="bold";
-    document.querySelector("img").setAttribute("src","./images/"+image+"");
+    document.querySelector("img").setAttribute("src",image);
   });
   btn.addEventListener("mouseout",function(){
     btn.style.color="#DA0463";
@@ -21,7 +21,7 @@ function sound(button, audio, image){
 
 
 
-sound("w", "tom-1.mp3","tom1.png")
+sound("w", "tom-1.mp3","./images/tom1.png")
 sound("a", "tom-2.mp3","tom2.png")
 sound("d", "tom-3.mp3","tom3.png")
 sound("s", "tom-4.mp3","tom4.png")
