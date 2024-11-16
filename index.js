@@ -9,9 +9,9 @@ function sound(button, audio, image){
     document.querySelector("img").setAttribute("src",image);
   });
   btn.addEventListener("mouseout",function(){
-      btn.style.color="#DA0463";
-      document.querySelector("img").removeAttribute("src");
-    });
+    btn.style.color="#DA0463";
+    document.querySelector("img").removeAttribute("src");
+  });
   btn.addEventListener("click",function(){
     let a= new Audio(audio);
     a.play();
