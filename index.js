@@ -1,6 +1,4 @@
 
-
-
 function sound(button, audio, image){
   let btn=document.querySelector("."+button);
   btn.addEventListener("mouseover",function(){
