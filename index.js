@@ -15,7 +15,7 @@ function sound(button, audio, image){
     });
   btn.addEventListener("click",function(){
     btn.style.color="red";
-    let a= new Audio("./sounds/"+audio);
+    let a= new Audio("./audio/"+audio);
     a.play()
   });
 }
