@@ -1,28 +1,27 @@
+var drumButtonLength=document.querySelectorAll(".drum").length;
+let button=[["w","a","s","d","j","k","l"],["tom-1.mp3","tom-2.mp3","tom-3.mp3","tom-4.mp3","crash.mp3","kick-bass.mp3","snare.mp3"],["tom1.png","tom2.png","tom3.png","tom4.png","crash.png","kick.png","snare.png"]]
 
 function sound(button, audio, image){
   let btn=document.querySelector("."+button);
   btn.addEventListener("mouseover",function(){
     btn.style.color="green";
     btn.style.fontweight="bold";
-    document.querySelector("img").setAttribute("src",image);
+    document.querySelector("img").setAttribute("src", "./images/"+image);
+
   });
   btn.addEventListener("mouseout",function(){
-    btn.style.color="#DA0463";
-    document.querySelector("img").setAttribute("src","");
-  });
+      btn.style.color="#DA0463";
+      document.querySelector("img").setAttribute("src", "");
+    });
   btn.addEventListener("click",function(){
-    let a= new Audio(audio);
-    a.play();
-    
+    btn.style.color="red";
+    let a= new Audio("./sounds/"+audio);
+    a.play()
   });
 }
 
 
-
-sound("w", "./audio/tom-1.mp3","./images/tom1.png")
-sound("a", "./audio/tom-2.mp3","./images/tom2.png")
-sound("d", "./audio/tom-3.mp3","./images/tom3.png")
-sound("s", "./audio/tom-4.mp3","./images/tom4.png")
-sound("j", "./audio/crash.mp3","./images/crash.png")
-sound("k", "./audio/snare.mp3","./images/snare.png")
-sound("l", "./audio/kick-bass.mp3","./images/kick.png")
+for (x=0;x<drumButtonLength;x++){
+  sound(button[0][x],button[1][x],button[2][x])
+  });
+}
