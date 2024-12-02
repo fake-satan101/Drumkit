@@ -23,4 +23,5 @@ function sound(button, audio, image){
 
 for (x=0;x<drumButtonLength;x++){
   sound(button[0][x],button[1][x],button[2][x])
+  
 }
