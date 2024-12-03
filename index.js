@@ -39,7 +39,7 @@ function sound(button, audio, image) {
     setTimeout(function(){
       btn.style.color = "#DA0463";
     },200);
-    let a = new Audio("./sounds/" + audio);
+    let a = new Audio("./audio/" + audio);
     a.play();
   });
 }
