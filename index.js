@@ -36,6 +36,9 @@ function sound(button, audio, image) {
   // Add click event listener to play sound
   btn.addEventListener("click", function () {
     btn.style.color = "red";
+    setTimeout(function(){
+      btn.style.color = "#DA0463";
+    },200);
     let a = new Audio("./sounds/" + audio);
     a.play();
   });
